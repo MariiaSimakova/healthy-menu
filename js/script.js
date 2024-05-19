@@ -172,7 +172,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
       if (this.classes.length === 0) {
         this.classes = "menu__item";
-        element.classList.add(this.element);
+        element.classList.add(this.classes);
       } else {
         this.classes.forEach((className) => element.classList.add(className));
       }
