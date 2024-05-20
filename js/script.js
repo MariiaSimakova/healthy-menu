@@ -223,4 +223,6 @@ window.addEventListener("DOMContentLoaded", () => {
     ".menu .container",
     "menu__item"
   ).render();
+
+  // отправка на сервер
 });
