@@ -4,7 +4,7 @@ function tabs(
   tabsParentSelector,
   activeClass
 ) {
-  const tabs = document.querySelectorAll(tabsSelector),
+  let tabs = document.querySelectorAll(tabsSelector),
     tabsContent = document.querySelectorAll(tabsContentSelector),
     tabsParent = document.querySelector(tabsParentSelector);
 
@@ -13,11 +13,11 @@ function tabs(
       item.classList.add("hide");
       item.classList.remove("show", "fade");
     });
-  }
 
-  tabs.forEach((item) => {
-    item.classList.remove(activeClass);
-  });
+    tabs.forEach((item) => {
+      item.classList.remove(activeClass);
+    });
+  }
 
   function showTabContent(i = 0) {
     tabsContent[i].classList.add("show", "fade");
